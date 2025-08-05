@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --body-bgcolor: hsl(30, 54%, 90%);
+  --recipe-name-color: hsl(24, 5%, 18%);
+  --preparation-color: hsl(332, 51%, 32%);
+  --preparation-bgcolor: hsl(330, 100%, 98%);
+  --heading-number-amount-color: hsl(14, 45%, 36%);
+  --card-bgcolor: hsl(0, 0%, 100%);
+  --hr-color: hsl(30, 18%, 87%);
+  --text-color: hsl(30, 10%, 34%);
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--body-bgcolor);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+li {
+  margin-block: 10px;
+}
+li::marker {
+  color: var(--heading-number-amount-color);
+  font-weight: bolder;
+}
+li >h4 {
+  display: inline-block;
+}
+
+/* For Mobile view  */
+@media screen and (min-width: 340px) {
+  .card {
+    width: 100vw;
+    height: auto;
+    background: var(--card-bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-block-end: 40px;
+  }
+  .recipe {
+    width: 85vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .omelette {
+    width: 100vw;
+  }
+
+  /* Intropart  */
+  .intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .introtitle h1 {
+    font-size: 32px;
+    color: var(--recipe-name-color);
+  }
+  .introdesc p {
+    font-size: 15.5px;
+    line-height: 19px;
+    color: var(--text-color);
+  }
+
+  /* preparation part  */
+  .prep {
+    width: 100%;
+    height: auto;
+    background: var(--preparation-bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+  }
+  .prepart {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .preparttitle {
+    color: var(--preparation-color);
+    font-size: 20px;
+  }
+  .prepartlist {
+    padding-inline: 13px;
+    color: var(--text-color);
+    font-size: 17px;
+  }
+
+  /* Ingredients parts  */
+  .ingredients {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .title h1 {
+    font-size: 26px;
+    color: var(--heading-number-amount-color);
+  }
+  .ingredientslist {
+    padding-inline-start: 20px;
+    color: var(--text-color);
+    font-size: 17px;
+  }
+  .ingredientslist ul li {
+    padding-inline-start: 20px;
+  }
+
+  /* Instruction part  */
+  .instructions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .instructionslist {
+    padding-inline-start: 20px;
+    color: var(--text-color);
+    font-size: 17px;
+  }
+  .instructionslist ol li {
+    padding-inline-start: 20px;
+  }
+
+  /* Nutrition part  */
+  .Nutrition {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Nutritionintro {
+    color: var(--text-color);
+  }
+  .table {
+    width: 100%;
+  }
+  .table table {
+    border-collapse: collapse;
+  }
+  .table table tr,
+  th {
+    border-bottom: 2px solid var(--hr-color);
+  }
+  .table table tr td {
+    width: 42.5vw;
+    padding-inline: 15px;
+    padding-block: 10px;
+    vertical-align: middle;
+    color: var(--text-color);
+  }
+  .table table tr > td:nth-child(2) {
+    color: var(--heading-number-amount-color);
+  }
+  hr {
+    width: 100%;
+    height: 2px;
+    background: var(--hr-color);
+    border: none;
+  }
+}
+
+/* For Desktop view  */
+@media screen and (min-width: 1340px) {
+  .card {
+    width: 55vw;
+    margin-top: 97px;
+    padding-block: 40px;
+    border-radius: 20px ;
+  }
+  .recipe {
+    width: 90%;
+  }
+  .omelette {
+    width: 100%;
+    border-radius: 15px ;
+  }
+
+  /* Intropart  */
+  
+  .introtitle h1 {
+    font-size: 35px;
+  }
+
+  /* preparation part  */
+  
+  .prepart {
+    width: 90%;
+  }
+  .preparttitle {
+    font-size: 22px;
+  }
+
+
+}
