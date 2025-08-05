@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Rubaiyat-Hassan/social-links-profile-main/](https://github.com/Rubaiyat-Hassan/social-links-profile-main/)
-- Live Site URL: [https://rubaiyat-hassan.github.io/social-links-profile-main/](https://rubaiyat-hassan.github.io/social-links-profile-main/)
+- Solution URL: [https://github.com/Rubaiyat-Hassan/recipe-page-main](https://github.com/Rubaiyat-Hassan/recipe-page-main)
+- Live Site URL: [https://rubaiyat-hassan.github.io/recipe-page-main/](https://rubaiyat-hassan.github.io/recipe-page-main/)
 
 ## My process
 
