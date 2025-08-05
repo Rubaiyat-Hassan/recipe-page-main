@@ -186,7 +186,7 @@ li >h4 {
 }
 
 /* For Desktop view  */
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 1240px) {
   .card {
     width: 55vw;
     margin-top: 97px;
